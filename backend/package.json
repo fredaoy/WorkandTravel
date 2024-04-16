@@ -4,7 +4,7 @@
   "description": "Description of your app",
   "main": "runproject.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node runproject.js"
   },
 
   "dependencies": {
