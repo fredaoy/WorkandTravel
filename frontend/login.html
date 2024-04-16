@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login1.css">
+    <script src="https://kit.fontawesome.com/ee30556ebb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Kanit:wght@600&family=Montserrat:wght@300&family=Nanum+Gothic:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="navbar">
+        <h3>W&T</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg" alt="" width="40%">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+    </div>
+
+    <div class="container">
+        <div class="form-box">
+         <h1 id="title">Sign Up</h1>
+         <form id="myForm" action="/signup" method="GET">
+             <div class="input-group">
+                 <div class="input-field" id="nameField">
+                     <i class="fa-solid fa-user"></i>
+                     <input type="text" name="fn" id="" placeholder="Name">
+                 </div>
+ 
+                 <div class="input-field">
+                     <i class="fa-solid fa-envelope"></i>
+                     <input type="email" name="em" id="" placeholder="email">
+                 </div>
+ 
+                 <div class="input-field">
+                     <i class="fa-solid fa-lock"></i>
+                     <input type="text" name="pw" id="" placeholder="Password">
+                 </div>
+                 <p>Lost password <a href="#">Click here</a></p>
+             </div>
+ 
+ 
+             <div class="btn-field">
+                 <button type="button" id="signupBtn">Sign up</button>
+                 <a href="/"><button type="button" id="signinBtn" class="disable">Sign in</button></a>
+             </div>
+ 
+             <div class="submit">
+                 <input type="submit" value="Submit" id="submitBtn">
+             </div>
+         </form>
+        </div>
+     </div>
+
+    
+   
+</body>
+</html>

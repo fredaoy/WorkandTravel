@@ -1,0 +1,310 @@
+*,*::after,*::before {
+
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: 0;
+    scroll-behavior: smooth;
+    letter-spacing: 0.1rem;
+    }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.navbar{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F1E56;
+    color: #ffffff;
+    height: 90px;
+    }
+
+    .navbar a{
+        color: rgb(143, 143, 143);
+    }
+
+    .navbar img{
+        width: 60px;
+        position: absolute;
+        left: 75px;
+        top: 27px;
+    }
+    
+    .navbar h3{
+    display: flex;
+    gap: 10px;
+    font-family: Cinzel, sans-serif;
+    font-weight: bold;
+    padding-left: 15px;
+    }
+    
+    .navbar ul .link1{
+    background-color: deepskyblue;
+    opacity: 0.6;
+    transition: 0.5s;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    }
+    
+    .navbar ul .link2{
+    background-color: deepskyblue;
+    opacity: 0.6;
+    transition: 0.5s;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    }
+    
+    .navbar ul .link3{
+    background-color: deepskyblue;
+    opacity: 0.6;
+    transition: 0.5s;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    }
+    
+    .navbar ul :hover{
+    background-color: deepskyblue;
+    opacity: 1;
+    }
+    
+    ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 1.2rem;
+    }
+
+
+.head{
+    margin-top: 2cm;
+    margin-left: 3.5cm;
+}
+
+head h1{
+    font-size: 50px;
+}
+
+.logosub img{
+    width: 30%;
+    position: absolute;
+    left: 36%;
+    top: 4.5cm;
+}
+
+.kk{
+    border: 3px solid gray;
+    width: 30%;
+    position: absolute;
+    top: 8cm;
+    left: 3.5cm;
+}
+
+.k{
+    border: 3px solid gray;
+    width: 30%;
+    position: absolute;
+    top: 8cm;
+    right: 3.5cm; 
+}
+
+.pic{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0.5cm;
+    margin-top: -1cm;
+}
+
+.one img{
+    border-radius: 15px;
+    position: relative;
+    top: 250px;
+}
+
+.info h2{
+    position: absolute;
+    top: 21cm;
+    left: 2cm;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    margin-top: 10cm;
+    margin-left: 4cm;
+    width: 10cm;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5cm;
+  }
+  
+  /* เพิ่ม CSS นี้เพื่อปรับแต่งสีและขนาดตัวอักษรของตัวเลือกใน select */
+  select {
+    color: #555;
+    font-size: 14px;
+  }
+  
+  /* เพิ่ม CSS นี้เพื่อปรับแต่งรูปแบบการแสดงผลของตัวเลือกใน select */
+  select option {
+    background-color: #fff;
+  }
+
+  .container1 {
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+    border: 2px solid #f9f2f2;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    /* text-align: center; */
+    margin-left: 16cm;
+    margin-top: -9.5cm;
+
+  }
+
+h2.sss{
+    font-size: 50px;
+    margin-top: -0.4cm;
+}
+
+  h2 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .images {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-left: 16cm;
+    width: 50px;
+  
+  }
+
+  .image-container {
+    margin: 10px;
+    /* border: 2px solid black;
+     */
+  }
+/* 
+  .image-container img{
+    width: 50%;
+
+  } */
+
+  .image {
+    max-width: 300px;
+    max-height: 300px;
+    transition: transform 0.3s;
+    border-radius: 15px;
+  }
+
+  .image:hover {
+    transform: scale(1.1);
+  }
+
+  h2.oi{
+    /* align-items: center; */
+    width: 500px;
+    font-size: 40px;
+    position: relative;
+    top: 70px;
+    left: 11cm;
+    /* text-align: center;
+    justify-content: center; */
+  }
+
+  .ll{
+    border-bottom: 2px solid grey;
+    width: 9cm;
+  }
+
+  .map{
+    position: relative;
+    left: 14cm;
+    top: -260px;
+    width: 20cm;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #e0e0e03c;
+    
+    
+  }
+
+  .maps{
+    position: relative;
+    left: 14cm;
+    top: -260px;
+    width: 20cm;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #e0e0e03c;
+  }
+
+  /* #williamsburgData{
+    margin-top: -7cm;
+  } */
+
+  /* #myForm{
+    height: 0vh;
+  } */
+
+  .placess{
+    height: 90vh;
+  }
+    

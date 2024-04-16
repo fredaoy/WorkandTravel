@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="job.css">
+    <script  src="map.js">
+      window.onload=initialMap();
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDu836Dqkd5oMVKxvZqPpf6cAOblaxMbVU&callback=initialMap">
+  </script>
+  <style>
+    #mapDisplay{
+            height: 300px;
+            width: 400px;
+            border-radius: 20px;
+            margin-top: 1cm;
+    }
+
+    #mapDisplays{
+      height: 300px;
+            width: 400px;
+            border-radius: 20px;
+            margin-top: 1cm;
+    }
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <h3>W&T</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_United_States_%28DoS_ECA_Color_Standard%29.svg" alt="" width="40%">
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/aboutus">About us</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+    </div>
+
+    <div class="head">
+    <h1>Summer jobs / Spring jobs</h1>
+    </div>
+
+    <div class="logosub">
+        <div class="k"></div><img src="" alt=""><div class="kk"></div>
+    </div>
+
+    <div class="pic">
+        <div class="one">
+        <img src="https://cdn.discordapp.com/attachments/1031117619664797767/1112207197229817966/subway.webp" alt="" width="400px" height="300px">
+        </div>
+        <div class="one">
+            <img src="https://cdn.discordapp.com/attachments/1031117619664797767/1112207196630032444/subwayemployees.jpg" alt="" width="400px" height="300px">
+        </div>
+        <div class="one">
+            <img src="https://cdn.discordapp.com/attachments/1031117619664797767/1112207196877504573/Subway-USA-58424.png" alt="" width="400px" height="300px">
+        </div>
+    </div>
+
+    <div class="subway">
+        <div class="info">
+            <h2 class="sss">Subway</h2>
+        </div>
+    </div>
+
+    <form id="myForm" action="/submit-form" method="get">
+        <div class="input-group">
+          <div class="input-field">
+            <label for="projectName">ชื่อโครงการ</label>
+            <input type="text" id="projectName" name="projectName" placeholder="Work and Travel 2024" disabled="true">
+          </div>
+      
+          <div class="input-field">
+            <label for="location">สถานที่</label>
+            <input type="text" id="location" name="location" placeholder="Subway" disabled="true">
+          </div>
+      
+          <div class="input-field">
+            <label for="city">เมือง</label>
+            <select name="city" id="city" onchange="showSelectedCityData()">
+              <option value="">City</option>
+              <option value="Santa Rosa Beach">Santa Rosa Beach</option>
+              <option value="Williamsburg, Virginia">Williamsburg, Virginia</option>
+            </select>
+          </div>
+          
+          
+      
+      
+          <div class="input-field">
+            <label for="jobType">ตำแหน่งงานที่สมัคร</label>
+            <select name="position" id="jobType">
+                <option value="">Position</option>
+                <option value="Sandwist Artist" name="Sandwist Artist">Sandwist Artist</option>
+                <option value="Cashier" name="Cashier">Cashier</option>
+            </select>
+          </div>
+
+          <div class="input-field">
+            <label for="jobType">เพศ</label>
+            <select name="gender" id="Gender">
+                <option value="">Gender</option>
+                <option value="Male" name="Male">Male</option>
+                <option value="Female" name="Female">Female</option>
+            </select>
+          </div>
+      
+        <div class="submit">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+
+      <div class="container1">
+        <h2>Job Information</h2>
+        <div class="info">
+          <span class="label">Gender:</span>
+          Male/Female
+        </div>
+        <div class="ll"></div>
+        <div class="info">
+          <span class="label">Per Hour:</span>
+          $13.00/hour
+        </div>
+        <div class="ll"></div>
+        <div class="info">
+          <span class="label">City / State:</span>
+          Williamsburg, Virginia
+        </div>
+        <div class="ll"></div>
+        <div class="info">
+          <span class="label">English - Level:</span>
+          Advance
+        </div>
+        <div class="ll"></div>
+        <div class="info">
+          <span class="label">Housing:</span>
+          $100/week
+        </div>
+      </div>
+
+      <div class="placess" id="santaRosaBeachData">
+        <h2 class="oi">Santa Rosa Beach</h2>
+        <!-- รายละเอียดเมือง Santa Rosa Beach -->
+        <div class="images">
+          <div class="image-container">
+            <img class="image" src="https://www.telegraph.co.uk/content/dam/travel/2021/07/15/TELEMMGLPICT000264469363_trans_NvBQzQNjv4BqpVlberWd9EgFPZtcLiMQf0Rf_Wk3V23H2268P_XkPxc.jpeg?imwidth=680" alt="ภาพที่ 1" height="100%">
+          </div>
+          <div class="image-container">
+            <img class="image" src="https://wp.inews.co.uk/wp-content/uploads/2021/12/PRI_212915296.jpg" alt="ภาพที่ 2" height="100%">
+          </div>
+          <div class="image-container">
+            <img class="image" src="https://www.cuddlynest.com/blog/wp-content/uploads/2021/12/best-theme-parks-usa-disney-california-park.jpg" alt="ภาพที่ 3" height="100%"> 
+          </div>
+          <div class="image-container">
+            <img class="image" src="https://www.tripsavvy.com/thmb/m2HeiwGlfxGkJ54Q0cSjORwfHUM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Williamsburg-56a239743df78cf772736c86.jpg" alt="ภาพที่ 3" height="100%">
+          </div>
+        </div>
+        <div id="mapDisplay"></div>
+        <div class="maps">
+          <p>ในรัฐ Virginia มีเมืองประวัติศาสตร์ที่เป็น Historic Triangle of Virginia อยู่ได้แก่ Williamsburg, Yorktown and Jamestown เป็นสถานที่ท่องเที่ยวระดับโลก มีเสน่ห์ด้วย ร้านค้า ร้านอาหาร สนามกอล์ฟที่ผู้คนกว่า4,000,000คนมาเที่ยวชมเพื่อสัมผัสกับประสบการณ์ใหม่ๆ ที่ Williamsburgและถ้าพูดถึง Colonial Williamsburg 
+            ที่มีจุดดึงดูดความน่าสนใจทางประวัติศาสตร์ แล้วยังมีสวนสนุก Busch Gardens ให้น้องๆ ได้เพลิดเพลินกับเครื่องเล่นที่หลากหลาย มีแหล่ง Shoppingให้ได้ละลายทรัพย์หลายที่การเดินทางก็สะดวกสบายด้วยรถบัสหากใครอินกับประวัติศาสตร์โบราณและใช้ชีวิตในเมืองที่ครบครันไปด้วยสิ่งอำนวยความสะดวกมากมาย อย่าให้ช่วง Summer ของน้องๆ สูญเปล่า 
+            ไป Work and Travel USA ที่ Williamsburg กันเถอะ! น้องต้องประทับใจอย่างแน่นอน</p>
+          </div>
+
+      </div>
+      
+      <div class="placess" id="williamsburgData">
+        <h2 class="oi">Williamsburg, Virginia</h2>
+        <!-- รายละเอียดเมือง Williamsburg, Virginia -->
+          <div class="images">
+            <div class="image-container">
+              <img class="image" src="https://www.telegraph.co.uk/content/dam/travel/2021/07/15/TELEMMGLPICT000264469363_trans_NvBQzQNjv4BqpVlberWd9EgFPZtcLiMQf0Rf_Wk3V23H2268P_XkPxc.jpeg?imwidth=680" alt="ภาพที่ 1" height="100%">
+            </div>
+            <div class="image-container">
+              <img class="image" src="https://wp.inews.co.uk/wp-content/uploads/2021/12/PRI_212915296.jpg" alt="ภาพที่ 2" height="100%">
+            </div>
+            <div class="image-container">
+              <img class="image" src="https://www.cuddlynest.com/blog/wp-content/uploads/2021/12/best-theme-parks-usa-disney-california-park.jpg" alt="ภาพที่ 3" height="100%">
+            </div>
+            <div class="image-container">
+              <img class="image" src="https://www.tripsavvy.com/thmb/m2HeiwGlfxGkJ54Q0cSjORwfHUM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Williamsburg-56a239743df78cf772736c86.jpg" alt="ภาพที่ 3" height="100%">
+            </div>
+          </div>
+
+          <div id="mapDisplays"></div>
+        <div class="map">
+          <p>ในรัฐ Virginia มีเมืองประวัติศาสตร์ที่เป็น Historic Triangle of Virginia อยู่ได้แก่ Williamsburg, Yorktown and Jamestown เป็นสถานที่ท่องเที่ยวระดับโลก มีเสน่ห์ด้วย ร้านค้า ร้านอาหาร สนามกอล์ฟที่ผู้คนกว่า4,000,000คนมาเที่ยวชมเพื่อสัมผัสกับประสบการณ์ใหม่ๆ ที่ Williamsburgและถ้าพูดถึง Colonial Williamsburg 
+            ที่มีจุดดึงดูดความน่าสนใจทางประวัติศาสตร์ แล้วยังมีสวนสนุก Busch Gardens ให้น้องๆ ได้เพลิดเพลินกับเครื่องเล่นที่หลากหลาย มีแหล่ง Shoppingให้ได้ละลายทรัพย์หลายที่การเดินทางก็สะดวกสบายด้วยรถบัสหากใครอินกับประวัติศาสตร์โบราณและใช้ชีวิตในเมืองที่ครบครันไปด้วยสิ่งอำนวยความสะดวกมากมาย อย่าให้ช่วง Summer ของน้องๆ สูญเปล่า 
+            ไป Work and Travel USA ที่ Williamsburg กันเถอะ! น้องต้องประทับใจอย่างแน่นอน</p>
+          </div>
+        </div>
+
+
+      <!-- <div class="placess">
+        <h2 class="oi">Williamsburg, Virginia</h2>
+        <div class="images">
+          <div class="image-container">
+            <img class="image" src="https://www.telegraph.co.uk/content/dam/travel/2021/07/15/TELEMMGLPICT000264469363_trans_NvBQzQNjv4BqpVlberWd9EgFPZtcLiMQf0Rf_Wk3V23H2268P_XkPxc.jpeg?imwidth=680" alt="ภาพที่ 1">
+          </div>
+          <div class="image-container">
+            <img class="image" src="https://wp.inews.co.uk/wp-content/uploads/2021/12/PRI_212915296.jpg" alt="ภาพที่ 2">
+          </div>
+          <div class="image-container">
+            <img class="image" src="https://www.cuddlynest.com/blog/wp-content/uploads/2021/12/best-theme-parks-usa-disney-california-park.jpg" alt="ภาพที่ 3">
+          </div>
+          <div class="image-container">
+            <img class="image" src="https://www.tripsavvy.com/thmb/m2HeiwGlfxGkJ54Q0cSjORwfHUM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Williamsburg-56a239743df78cf772736c86.jpg" alt="ภาพที่ 3">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="placess">
+        <h2 class="oi">Santa Rosa Beach</h2>
+        <div class="images">
+          <div class="image-container">
+            <img class="image" src="https://www.telegraph.co.uk/content/dam/travel/2021/07/15/TELEMMGLPICT000264469363_trans_NvBQzQNjv4BqpVlberWd9EgFPZtcLiMQf0Rf_Wk3V23H2268P_XkPxc.jpeg?imwidth=680" alt="ภาพที่ 1">
+          </div>
+          <div class="image-container">
+            <img class="image" src="https://wp.inews.co.uk/wp-content/uploads/2021/12/PRI_212915296.jpg" alt="ภาพที่ 2">
+          </div>
+          <div class="image-container">
+            <img class="image" src="https://www.cuddlynest.com/blog/wp-content/uploads/2021/12/best-theme-parks-usa-disney-california-park.jpg" alt="ภาพที่ 3">
+          </div>
+          <div class="image-container">
+            <img class="image" src="https://www.tripsavvy.com/thmb/m2HeiwGlfxGkJ54Q0cSjORwfHUM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Williamsburg-56a239743df78cf772736c86.jpg" alt="ภาพที่ 3">
+          </div>
+        </div>
+      </div>  -->
+      
+      <script>
+        // JavaScript code for image zooming
+        const images = document.querySelectorAll('.image');
+        images.forEach(image => {
+          image.addEventListener('click', () => {
+            image.classList.toggle('zoomed');
+          });
+        });
+
+        function showSelectedCityData() {
+  var selectedCity = document.getElementById('city').value;
+  var santaRosaBeachData = document.getElementById('santaRosaBeachData');
+  var williamsburgData = document.getElementById('williamsburgData');
+  
+  // ซ่อนข้อมูลทุกอย่างก่อน
+  santaRosaBeachData.style.display = 'none';
+  williamsburgData.style.display = 'none';
+
+  if (selectedCity === 'Santa Rosa Beach') {
+    santaRosaBeachData.style.display = 'block';
+  } else if (selectedCity === 'Williamsburg, Virginia') {
+    williamsburgData.style.display = 'block';
+  }
+}
+
+
+// var appMap;
+//     function initialMap() {
+//       var santaRosaBeachCoordinates = { lat: 30.3781, lng: -86.2215 };
+//       var santaRosaBeachMapOptions = { zoom: 10, center: santaRosaBeachCoordinates };
+//       appMap = new google.maps.Map(
+//         document.getElementById("mapDisplay"),
+//         santaRosaBeachMapOptions
+//       );
+//     }
+
+
+
+//         // สร้างตัวแปรเพื่ออ้างอิงถึงเลือกเอลิเมนต์ในเมนูเมือง
+// var citySelect = document.getElementById("city");
+
+// // เพิ่มการตรวจจับเหตุการณ์เมื่อมีการเปลี่ยนค่าในเมนูเมือง
+// citySelect.addEventListener("change", function() {
+//   // ตรวจสอบค่าที่เลือก
+//   var selectedCity = this.value;
+
+//   // ดำเนินการตามที่ต้องการโดยใช้ค่าที่เลือก
+//   if (selectedCity === "Santa Rosa Beach") {
+//     // นำไปทำการเปลี่ยนหน้าเพจเมือง Santa Rosa Beach
+//     window.location.href = "/SantaRosaBeach";
+//   } else if (selectedCity === "Williamsburg, Virginia") {
+//     // นำไปทำการเปลี่ยนหน้าเพจเมือง Williamsburg, Virginia
+//     window.location.href = "williamsburg.html";
+//   }
+// });
+         
+      </script>
+</body>
+</html>
